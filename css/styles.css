@@ -265,7 +265,7 @@ body {
 }
 
 .feedback-title {
-  margin-bottom: 50px;
+  margin-bottom: 91px;
   color: #fff;
   font-size: 36px;
   line-height: 1.26;
@@ -277,17 +277,22 @@ body {
   text-align: center;
 }
 .feedback-item {
+  position: relative;
   width: calc((100% - 70px) / 3);
   border-radius: 5px;
   background-color: #fff;
 }
 
 .feedback-list-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-left: auto;
   margin-right: auto;
 }
 
 .feedback-title-name {
+  padding-top: 41px;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
@@ -304,44 +309,73 @@ body {
   padding-bottom: 19px;
 }
 
-/* test */
+/* section tarrifs */
 
-.test {
-  padding: 200px 0;
+.tarrifs-section {
 }
-.list {
+.tarrifs-title {
+  visibility: hidden;
 }
-.item {
+.tarrifs-item {
   display: flex;
-  gap: 30px;
-  align-items: center;
+  gap: 20px;
+}
+.tarrifs-list {
+  width: calc((100% - 40px) / 3);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.tarrifs-img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 47px;
+}
+.tarrifs-title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.tarrifs-product-title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.1;
+  color: #2e363e;
+}
+.tarrifs-price-title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #434b53;
+}
+.tarrifs-describe {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e363e;
+}
+.tarrifs-speed {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e363e;
 }
 
-.item::before {
-  content: "";
-  display: block;
-  width: 35px;
-  height: 35px;
-  border-radius: 14px;
-  background-image: url(../images/tick.svg);
-  background-position: center;
-  background-size: 16px 12px;
-  background-repeat: no-repeat;
+.speed-span {
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.item:nth-child(1)::before {
-  background-color: #f90;
-}
-
-.item:nth-child(2)::before {
-  background-color: #f03e3d;
-}
-
-.item:nth-child(3)::before {
-  background-color: #4d8dff;
-}
-.item:not(:last-child) {
-  margin-bottom: 34px;
+.tarrifs-btn {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.1;
+  color: #275f7a;
+  border: none;
+  background-color: transparent;
 }
 
 /* modal styles */
