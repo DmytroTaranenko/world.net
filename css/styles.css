@@ -89,7 +89,7 @@ body {
 }
 .header-nav-list {
   display: flex;
-  /* gap: 40px; */
+  gap: 40px;
 }
 
 .header-nav-item:not(:last-child) {
@@ -105,6 +105,10 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.link-active {
+  color: #275f7a;
 }
 
 .header-nav-link:hover,
@@ -494,13 +498,35 @@ body {
 }
 
 /* footer section  */
-
-.footer-wrapper {
+.footer-section {
+  background-color: #275f7a;
 }
 
-.footer-container {
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 91px;
   padding-bottom: 91px;
+}
+
+.footer-logo {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-social-item {
+  display: flex;
+  gap: 50px;
+}
+.footer-phone-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  text-align: right;
+  color: #fff;
 }
 
 /* modal styles */
